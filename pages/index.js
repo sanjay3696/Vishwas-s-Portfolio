@@ -19,8 +19,6 @@ import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin} from 'react-icons/io5'
 import Image from 'next/image'
-<script defer async src="https://integrate.depay.com/widgets/v8.js"></script>
-import DePayWidgets from '@depay/widgets';
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -88,23 +86,7 @@ const Home = () => (
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-         
-DePayWidgets.Payment({
-  integration: '8853d323-07b1-46be-9b8b-30bf72abe9ae',
-  accept:[
-    {
-      blockchain: 'ethereum',
-      amount: 1,
-      token: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE',
-      receiver: '0x11492128a5ef0b07822214eff4ec02629b9b0760'
-    }, {
-      blockchain: 'ethereum',
-      amount: 1,
-      token: '0xdAC17F958D2ee523a2206206994597C13D831ec7',
-      receiver: '0x11492128a5ef0b07822214eff4ec02629b9b0760'
-    }
-  ]
-})
+        
               My portfolio
             </Button>
           </NextLink>
