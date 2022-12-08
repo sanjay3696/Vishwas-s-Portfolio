@@ -88,15 +88,6 @@ const Home = () => (
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
              My portfolio
             </Button>
-<div
-  class="DePayButton"
-  label="Fghhh"
-  widget="Donation"
-  configuration='{"integration":"70aa5073-7280-40b1-8a85-3d8dc33ba26e","accept":[{"blockchain": "ethereum","token": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE","receiver": "0x11492128a5ef0b07822214eff4ec02629b9b0760"},{"blockchain": "ethereum","token": "0xdAC17F958D2ee523a2206206994597C13D831ec7","receiver": "0x11492128a5ef0b07822214eff4ec02629b9b0760"}]}'
-></div>
-<script src="https://integrate.depay.com/buttons/v7.js"></script>
-<noscript><a href="https://depay.com">Web3 Payments</a> are currently only supported with JavaScript enabled.</noscript>
-<script>DePayButtons.init({document: document});</script>
           </NextLink>
         </Box>
       </Section>
